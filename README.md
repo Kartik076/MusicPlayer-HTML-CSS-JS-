@@ -5,6 +5,7 @@ A full-featured music streaming website built with a modern tech stack. The fron
 
 ## 🚀 Features
 
+
 ### 🎨 Frontend:
 - 🎧 Music player with play/pause/next/previous buttons
 - 📃 Playlist & song list UI
