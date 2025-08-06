@@ -711,73 +711,6 @@ a {
 }
 
 @media (max-width: 1030px) {
-
-    /* .nav {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 10px;
-            padding: 10px;
-        } 
-
-         .starting,
-        .ending {
-            flex-direction: column;
-            align-items: flex-start;
-        }
-
-        .search-wrapper {
-            width: 100%;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .left {
-            display: none;
-            /* optionally hide sidebar 
-         }
-
-        .right {
-            width: 100vw;
-        }
-
-        .cardcontainer {
-            flex-wrap: nowrap;
-            overflow-x: scroll;
-        }
-
-        .card {
-            width: 140px;
-            margin: 10px;
-        }
-
-        .playbar {
-            flex-direction: column;
-            height: auto;
-            padding: 10px 0;
-            gap: 10px;
-        }
-
-        .btns {
-            gap: 15px;
-            padding-top: 0;
-        }
-
-        .prog {
-            width: 80vw;
-            font-size: 12px;
-        }
-
-        .minisong img {
-            height: 50px;
-        }
-
-        .names .sname {
-            font-size: 12px;
-        }
-
-        .names .aname {
-            font-size: 10px;
-        }  */
     .ending .tags,
     .ending .pipe {
         display: none;
@@ -850,7 +783,6 @@ a {
         display: flex;
         align-items: center;
         margin-left: auto;
-        /* push it to the right */
     }
 
     .logo {
