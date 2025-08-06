@@ -1,0 +1,147 @@
+<!-- start :- 12/6/25 -->
+<!-- ending :- __ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="icon" type="image/svg+xml" href="items/slogo.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/638af4500e.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <div class="nav flex align-center space-between">
+            <div class="starting flex align-center">
+                <div class="nav-left flex align-center">
+                    <div class="logo m20">
+                        <a href="https://www.spotify.com" target="_blank">
+                            <img src="items/logo.svg" alt="logo" />
+                        </a>
+                    </div>
+                    <a href="https://open.spotify.com" target="_blank">
+                        <img src="items/home.svg" alt="home" class="home align-center" />
+                    </a>
+                </div>
+                <div class="search-wrapper space-between flex">
+                    <div class="flex search">
+                        <img src="items/search.svg" alt="search" class="search justify-center" />
+                        <input type="text" placeholder="What do You want to listen?" />
+                    </div>
+                    <div class="flex opt align-center">
+                        <div class="pipe">|</div>
+                        <a href="https://open.spotify.com/search" target="_blank">
+                            <img src="items/browse.svg" alt="Browse" class="browse">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="ending flex align-center">
+                <div class="tags">
+                    <ul class="flex">
+                        <li><a href="https://www.spotify.com/premium" target="_blank"
+                                style="text-decoration: none; color: inherit;">Premium</a></li>
+                        <li><a href="https://support.spotify.com" target="_blank"
+                                style="text-decoration: none; color: inherit;">Support</a></li>
+                        <li><a href="https://www.spotify.com/download" target="_blank"
+                                style="text-decoration: none; color: inherit;">Download</a></li>
+                    </ul>
+                </div>
+
+                <div class="pipe">|</div>
+                <div class="others flex align-center">
+                    <a href="https://www.spotify.com/download/" target="_blank" class="install flex align-center">
+                        <img src="items/download.svg" alt="">
+                        Install
+                    </a>
+                    <a href="https://www.spotify.com/signup/" target="_blank" class="signup">Sign Up</a>
+                    <a href="https://www.spotify.com/login/" target="_blank" class="login">Log In</a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <main class="flex">
+            <div class="left">
+                <div class="library">
+                    <div class="lhead flex align-center space-between">
+                        <div>Your Library</div>
+                        <img src="items/plus.svg" class="plus" alt="add">
+
+                        <div class="addsong">
+                            <input type="text" class="filename songName" placeholder="Enter the Title of this song">
+                            <input type="text" class="filename artistName" placeholder="Enter the Name of Artist">
+                            <div class="file image">
+                                <input type="file" class="fileImg" placeholder="Paste Jpeg file here">
+                                <button class="choosefile imagebtn">Choose Image File</button>
+                                <div class="showfile Imagename">No File Chosen</div>
+                            </div>
+
+                            <div class="file song">
+                                <input type="file" class="fileMp3" placeholder="Paste Mp3 FIle here">
+                                <button class="choosefile songbtn">Choose Song File</button>
+                                <div class="showfile Songname">No File Chosen</div>
+                            </div>
+                            <button class="confirm">Add</button>
+                        </div>
+                    </div>
+                    <div class="songlist">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="trending">
+                    <div class="intro flex space-between">
+                        <span>Trending songs</span>
+                        <div class="exp1">Show All</div>
+                    </div>
+
+                    <div class="cardcontainer flex">
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="playbar">
+            <div class="all">
+                <div class="btns">
+                    <div><img src="items/prev.svg" alt="Previous" class="prev"></div>
+                    <div class="togg flex align-center justify-center">
+                        <i onclick="toggleSong(), toggleUi()" class="fa-solid fa-circle-play" id="playPause"></i>
+                    </div>
+                    <div><img src="items/next.svg" alt="Next" class="next"></div>
+                </div>
+                <div class="prog">
+                    <div class="currenttime">
+                        0:00
+                    </div>
+                    <input type="range" id="progress" value=0>
+                    <div class="maxtime">
+                        0:00
+                    </div>
+                </div>
+            </div>
+
+            <div class="minisong">
+                
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+
+</html>
